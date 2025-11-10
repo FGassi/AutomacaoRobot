@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.3 on win32)" generated="2025-11-07T09:46:17.224563" rpa="false" schemaversion="5">
+<suite id="s1" name="Cenarios" source="C:\Users\feliper\OneDrive - Docspider S.A\Área de Trabalho\novo-projeto-robot\Projeto-Desafio-3\cenarios.robot">
+<test id="s1-t1" name="Cenario 01: Validar que o site direciona para a seção de e-commerce Bookstore" line="16">
+<kw name="Dado que ao acessar o site" owner="Gherkin" source_name="Dado ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="que ao acessar o site" owner="Steps">
+<kw name="Abrir o site" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:17.979975" level="INFO">Opening browser 'chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-07T09:46:17.979975" elapsed="6.800933"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-07T09:46:24.780908" elapsed="0.092707"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:27.881193" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:24.878610" elapsed="3.002583"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:24.873615" elapsed="3.007578"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:17.979975" elapsed="9.901218"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:17.979975" elapsed="9.901218"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:17.974881" elapsed="9.906312"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:17.974881" elapsed="9.906312"/>
+</kw>
+<kw name="Quando o usuário clicar na seção “E-commerce Bookstore”" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário clicar na seção “E-commerce Bookstore”" owner="Steps">
+<kw name="Abrir E-commerce Bookstore" owner="Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:27.888174" level="INFO">Executing JavaScript:
+window.scrollBy(0, 350)
+Without any arguments.</msg>
+<arg>${ScrollLow}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:27.887366" elapsed="0.050326"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:27.940424" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div/div/div[2]/div/div/span[1]'.</msg>
+<arg>${EcommerceBookstore}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:46:27.939707" elapsed="4.490590"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:35.433617" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:32.433001" elapsed="3.000616"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:32.432017" elapsed="3.001600"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:27.885516" elapsed="7.548101"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:27.885516" elapsed="7.548101"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:27.881193" elapsed="7.552424"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:27.881193" elapsed="7.552424"/>
+</kw>
+<kw name="E então após validar que houve direcionamento para E-commerce Bookstore o teste será encerrado" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então após validar que houve direcionamento para E-commerce Bookstore o teste será encerrado" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se foi direcionado ao e-commerce bookstore...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:46:35.433617" elapsed="0.000000"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:35.433617" level="INFO">Executing JavaScript:
+window.scrollBy(0, 400)
+Without any arguments.</msg>
+<arg>${ScrollMedium}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:35.433617" elapsed="0.056637"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:38.492136" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:35.491626" elapsed="3.000510"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:35.490254" elapsed="3.001882"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:38.493000" level="INFO">Verifying element 'xpath=/html/body/main/div[3]/div[2]/div/div/h1' contains exact text 'Books List'.</msg>
+<arg>${TituloBookstore}</arg>
+<arg>Books List</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-11-07T09:46:38.493000" elapsed="0.086041"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cenário 01 Passou</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:46:38.579041" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-07T09:46:38.579041" elapsed="2.817085"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:35.433617" elapsed="5.962509"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:35.433617" elapsed="5.962509"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:35.433617" elapsed="5.962509"/>
+</kw>
+<tag>Cenario_01</tag>
+<status status="PASS" start="2025-11-07T09:46:17.974881" elapsed="23.422294"/>
+</test>
+<test id="s1-t2" name="Cenario 02: Validar que alguns links de menu estão funcionais" line="24">
+<kw name="Dado que ao acessar o site" owner="Gherkin" source_name="Dado ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="que ao acessar o site" owner="Steps">
+<kw name="Abrir o site" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:41.397833" level="INFO">Opening browser 'chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="6.676992"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-07T09:46:48.075155" elapsed="0.104024"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:51.181881" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:48.181653" elapsed="3.000228"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:48.181653" elapsed="3.000228"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="9.784048"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="9.784048"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="9.784048"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="9.784048"/>
+</kw>
+<kw name="Quando clicar sobre o item de menu “Demos”" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="clicar sobre o item de menu “Demos”" owner="Steps">
+<kw name="Clicar Demos" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:51.191005" level="INFO">Clicking element 'xpath=/html/body/header/nav/div/ul[1]/li[1]/a'.</msg>
+<arg>${Demos}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:46:51.191005" elapsed="0.313171"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:54.507254" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:51.506187" elapsed="3.001067"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:51.506187" elapsed="3.001067"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:51.188977" elapsed="3.318277"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:51.188977" elapsed="3.318277"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:51.188977" elapsed="3.318277"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:51.186953" elapsed="3.320301"/>
+</kw>
+<kw name="E clicar no sub item “Examples”" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="clicar no sub item “Examples”" owner="Steps">
+<kw name="Clicar subitem Examples" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:54.513065" level="INFO">Clicking element 'xpath=/html/body/header/nav/div/ul[1]/li[1]/ul/li[1]'.</msg>
+<arg>${DemosFirstChild}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:46:54.513065" elapsed="0.284466"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:46:57.799863" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:54.797531" elapsed="3.002332"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:54.797531" elapsed="3.002332"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:54.511296" elapsed="3.288567"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:54.511296" elapsed="3.288567"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:54.509273" elapsed="3.290590"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:54.509273" elapsed="3.290590"/>
+</kw>
+<kw name="E então o site direciona para Examples" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então o site direciona para Examples" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se foi direcionado aos exemplos...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:46:57.799863" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:46:57.863024" level="INFO">Current page contains element 'id=examples'.</msg>
+<arg>${IdExamples}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-07T09:46:57.799863" elapsed="0.063161"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:00.863671" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:46:57.863024" elapsed="3.000647"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:57.863024" elapsed="3.000647"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Contém o elemento, continuando cenário ...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:00.863671" elapsed="0.001860"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:03.870560" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:00.865531" elapsed="3.005029"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:00.865531" elapsed="3.005029"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:57.799863" elapsed="6.072704"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:46:57.799863" elapsed="6.072704"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:46:57.799863" elapsed="6.072704"/>
+</kw>
+<kw name="Quando clicar sobre o item de menu “Tools”" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="clicar sobre o item de menu “Tools”" owner="Steps">
+<kw name="Clicar Tools" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:03.899023" level="INFO">Clicking element 'xpath=/html/body/header/nav/div/ul[1]/li[2]'.</msg>
+<arg>${Tools}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:47:03.899023" elapsed="0.207960"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:07.111600" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:04.110803" elapsed="3.000797"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:04.106983" elapsed="3.004617"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:03.889725" elapsed="3.221875"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:03.874075" elapsed="3.237525"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:03.874075" elapsed="3.237525"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:03.874075" elapsed="3.237525"/>
+</kw>
+<kw name="E então após validar que também houve direcionamento para Tools o teste será encerrado" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então após validar que também houve direcionamento para Tools o teste será encerrado" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se foi direcionado corretamente...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:07.111600" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:07.171844" level="INFO">Current page contains element 'id=tools'.</msg>
+<arg>${IdTools}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-07T09:47:07.111600" elapsed="0.060244"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:10.174469" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:07.173870" elapsed="3.000599"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:07.171844" elapsed="3.002625"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cenário 02 Passou</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:10.174469" elapsed="0.000000"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:13.175196" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:10.174469" elapsed="3.000727"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:10.174469" elapsed="3.000727"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-07T09:47:13.175196" elapsed="2.872073"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:07.111600" elapsed="8.935669"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:07.111600" elapsed="8.935669"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:07.111600" elapsed="8.937690"/>
+</kw>
+<tag>Cenario_02</tag>
+<status status="PASS" start="2025-11-07T09:46:41.397833" elapsed="34.651457"/>
+</test>
+<test id="s1-t3" name="Cenário 03: Validar que a barra de busca está funcional" line="35">
+<kw name="Dado que ao acessar o site" owner="Gherkin" source_name="Dado ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="que ao acessar o site" owner="Steps">
+<kw name="Abrir o site" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:16.057970" level="INFO">Opening browser 'chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="8.183311"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-07T09:47:24.232601" elapsed="0.076205"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:27.309009" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:24.308806" elapsed="3.000203"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:24.308806" elapsed="3.000203"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="11.259719"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="11.259719"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="11.259719"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="11.259719"/>
+</kw>
+<kw name="E clicar sobre a barra de busca" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="clicar sobre a barra de busca" owner="Steps">
+<kw name="Acessar barra de busca" owner="Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:27.328178" level="INFO">Executing JavaScript:
+window.scrollBy(0, 350)
+Without any arguments.</msg>
+<arg>${ScrollLow}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:27.309009" elapsed="0.082646"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:30.392662" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:27.391655" elapsed="3.001007"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:27.391655" elapsed="3.001007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:30.392662" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div/div/div[1]/div[2]/div/div/div/input'.</msg>
+<arg>${BarradeBusca}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:47:30.392662" elapsed="0.310563"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:33.708014" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:30.707578" elapsed="3.000436"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:30.707072" elapsed="3.000942"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:27.309009" elapsed="6.399005"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:27.309009" elapsed="6.399005"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:27.309009" elapsed="6.399005"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:27.309009" elapsed="6.399005"/>
+</kw>
+<kw name="E digitar um termo de pesquisa" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="digitar um termo de pesquisa" owner="Steps">
+<kw name="Pesquisar termo" owner="Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:33.710037" level="INFO">Typing text 'Web inputs' into text field 'xpath=/html/body/main/div[3]/div[2]/div/div/div[1]/div[2]/div/div/div/input'.</msg>
+<arg>${BarradeBusca}</arg>
+<arg>Web inputs</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:47:33.710037" elapsed="0.278170"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:36.997027" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:33.996348" elapsed="3.000679"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:33.996348" elapsed="3.000679"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:33.710037" elapsed="3.286990"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:33.710037" elapsed="3.286990"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:33.710037" elapsed="3.286990"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:33.710037" elapsed="3.286990"/>
+</kw>
+<kw name="Quando o usuário clicar sobre o botão “Search”" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário clicar sobre o botão “Search”" owner="Steps">
+<kw name="Clicar botão “Search”" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:36.997027" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div/div/div[1]/div[2]/div/div/div/button'.</msg>
+<arg>${BotãoSearch}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:47:36.997027" elapsed="0.261296"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:40.259253" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:37.258323" elapsed="3.000930"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:37.258323" elapsed="3.000930"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:36.997027" elapsed="3.262226"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:36.997027" elapsed="3.262226"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:36.997027" elapsed="3.262226"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:36.997027" elapsed="3.262226"/>
+</kw>
+<kw name="E então após validar que a busca exibiu um retorno o teste será encerrado" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então após validar que a busca exibiu um retorno o teste será encerrado" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se houve retorno da busca...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:40.259253" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Not Contain" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:41.558062" level="INFO">Current page does not contain text 'No examples found'.</msg>
+<arg>No examples found</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<status status="PASS" start="2025-11-07T09:47:40.259253" elapsed="1.298809"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:44.574072" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:41.573712" elapsed="3.000360"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:41.558062" elapsed="3.016010"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Retorno de busca não vazio</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:44.574072" elapsed="0.002043"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:47.579055" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:44.578132" elapsed="3.000923"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:44.576115" elapsed="3.002940"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cenário 03 Passou</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:47:47.579055" elapsed="0.000000"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:47:50.579654" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:47.579055" elapsed="3.000599"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:47.579055" elapsed="3.000599"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-07T09:47:50.579654" elapsed="2.785851"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:40.259253" elapsed="13.106252"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:40.259253" elapsed="13.106252"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:40.259253" elapsed="13.106252"/>
+</kw>
+<tag>Cenario_03</tag>
+<status status="PASS" start="2025-11-07T09:47:16.049290" elapsed="37.316215"/>
+</test>
+<test id="s1-t4" name="Cenário 04: Validar que ao clicar no botão referente a um card e inserir dados na funcionalidade, os dados são apresentados na tela" line="45">
+<kw name="Dado que ao acessar o site" owner="Gherkin" source_name="Dado ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="que ao acessar o site" owner="Steps">
+<kw name="Abrir o site" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:47:53.365505" level="INFO">Opening browser 'chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="6.547077"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-07T09:47:59.912582" elapsed="0.041682"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:02.956229" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:47:59.956053" elapsed="3.000176"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:59.954264" elapsed="3.001965"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="9.590724"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="9.590724"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="9.590724"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="9.590724"/>
+</kw>
+<kw name="E na seção “Sample applications for practice test automation” acessar o botão “Try it out” do card “Web inputs”" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="na seção “Sample applications for practice test automation” acessar o botão “Try it out” do card “Web inputs”" owner="Steps">
+<kw name="Acessar o botão “Try it out” do card “Web inputs”" owner="Keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${FirstCard}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-07T09:48:02.956229" elapsed="0.348623"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:06.312471" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:03.311563" elapsed="3.000908"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:03.304852" elapsed="3.007619"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:06.312471" level="INFO">Executing JavaScript:
+window.scrollBy(0, 400)
+Without any arguments.</msg>
+<arg>${ScrollMedium}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:06.312471" elapsed="0.014611"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:09.328365" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:06.327082" elapsed="3.001283"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:06.327082" elapsed="3.001283"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:09.328365" level="INFO">Clicking element 'xpath=//*[@id="examples"]/div[1]/div[1]/div/div[2]/div/a'.</msg>
+<arg>${PrimeiroBotaoTryout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:09.328365" elapsed="2.176972"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:14.505638" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:11.505337" elapsed="3.000301"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:11.505337" elapsed="3.000301"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:02.956229" elapsed="11.549409"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:02.956229" elapsed="11.549409"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:02.956229" elapsed="11.549409"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:02.956229" elapsed="11.550239"/>
+</kw>
+<kw name="E ao direcionar o usuário para o input Number" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao direcionar o usuário para o input Number" owner="Steps">
+<kw name="Direcionar para input Number" owner="Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:14.510273" level="INFO">Executing JavaScript:
+window.scrollBy(0, 420)
+Without any arguments.</msg>
+<arg>${ScrollHigh}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:14.510273" elapsed="0.074532"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:17.585264" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:14.584805" elapsed="3.000459"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:14.584805" elapsed="3.000459"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:14.510273" elapsed="3.074991"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:14.510273" elapsed="3.074991"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:14.510273" elapsed="3.074991"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:14.506468" elapsed="3.078796"/>
+</kw>
+<kw name="E o usuário inserir números" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário inserir números" owner="Steps">
+<kw name="Inserir números input Number" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:17.592935" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[1]/div/input'.</msg>
+<arg>${InputNumber}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:17.592935" elapsed="0.343383"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:20.939036" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:17.938843" elapsed="3.000193"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:17.936318" elapsed="3.002718"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:20.941057" level="INFO">Typing text '123456' into text field 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[1]/div/input'.</msg>
+<arg>${InputNumber}</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:20.939036" elapsed="0.292193"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:17.592935" elapsed="3.638294"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:17.592935" elapsed="3.638294"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:17.592935" elapsed="3.638294"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:17.585264" elapsed="3.645965"/>
+</kw>
+<kw name="E ao clicar no campo input Text" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao clicar no campo input Text" owner="Steps">
+<kw name="Clicar campo input Text" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:21.231229" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[2]/div/input'.</msg>
+<arg>${InputText}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:21.231229" elapsed="0.233010"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:24.467784" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:21.466362" elapsed="3.001422"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:21.464239" elapsed="3.003545"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:21.231229" elapsed="3.236555"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:21.231229" elapsed="3.236555"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:21.231229" elapsed="3.236555"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:21.231229" elapsed="3.236555"/>
+</kw>
+<kw name="E o usuário inserir um texto" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário inserir um texto" owner="Steps">
+<kw name="Inserir um texto no campo" owner="Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:24.472583" level="INFO">Typing text 'Automação' into text field 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[2]/div/input'.</msg>
+<arg>${InputText}</arg>
+<arg>Automação</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:24.472583" elapsed="0.277943"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:27.751232" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:24.750526" elapsed="3.000706"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:24.750526" elapsed="3.000706"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:24.472583" elapsed="3.278649"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:24.472583" elapsed="3.278649"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:24.469939" elapsed="3.281293"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:24.469939" elapsed="3.281293"/>
+</kw>
+<kw name="E ao clicar no campo input Password" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao clicar no campo input Password" owner="Steps">
+<kw name="Clicar campo input Password" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:27.751232" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[3]/div/input'.</msg>
+<arg>${InputPassword}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:27.751232" elapsed="0.231914"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:30.983443" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:27.983146" elapsed="3.000297"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:27.983146" elapsed="3.000297"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:27.751232" elapsed="3.232211"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:27.751232" elapsed="3.232211"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:27.751232" elapsed="3.232211"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:27.751232" elapsed="3.232211"/>
+</kw>
+<kw name="E o usuário inserir caracteres" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário inserir caracteres" owner="Steps">
+<kw name="Inserir caracteres" owner="Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:30.990248" level="INFO">Typing text 'Automação' into text field 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[3]/div/input'.</msg>
+<arg>${InputPassword}</arg>
+<arg>Automação</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:30.990248" elapsed="0.256854"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:34.248587" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:31.247102" elapsed="3.001485"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:31.247102" elapsed="3.001485"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:30.990248" elapsed="3.258339"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:30.989122" elapsed="3.259465"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:30.983443" elapsed="3.266713"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:30.983443" elapsed="3.266713"/>
+</kw>
+<kw name="E ao clicar no ícone presente campo input Date" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao clicar no ícone presente campo input Date" owner="Steps">
+<kw name="Clicar ícone Date" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:34.253744" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[4]/div/input'.</msg>
+<arg>${InputDate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:34.253744" elapsed="0.324373"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:37.578124" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:34.578117" elapsed="3.000007"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:34.578117" elapsed="3.000007"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:34.253744" elapsed="3.324380"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:34.251721" elapsed="3.326403"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:34.251721" elapsed="3.326403"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:34.251721" elapsed="3.326403"/>
+</kw>
+<kw name="E ao selecionar uma data" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao selecionar uma data" owner="Steps">
+<kw name="Selecionar data" owner="Keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:37.580962" level="INFO">Typing text '04-11-2025' into text field 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[1]/div[4]/div/input'.</msg>
+<arg>${InputDate}</arg>
+<arg>04-11-2025</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:37.580962" elapsed="0.289760"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.580962" elapsed="0.289760"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.580962" elapsed="0.289760"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:37.578124" elapsed="0.292598"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.578124" elapsed="0.292598"/>
+</kw>
+<kw name="Quando o usuário clicar em Display Inputs" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário clicar em Display Inputs" owner="Steps">
+<kw name="Clicar display inputs" owner="Keywords">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${DisplayInputs}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-11-07T09:48:37.875962" elapsed="0.346600"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:38.222562" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[1]/div/button[1]'.</msg>
+<arg>${DisplayInputs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:48:38.222562" elapsed="0.182818"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:41.405987" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:38.405380" elapsed="3.000607"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:38.405380" elapsed="3.000607"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.875962" elapsed="3.530025"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.875962" elapsed="3.530025"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:37.875962" elapsed="3.530025"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:37.875962" elapsed="3.530025"/>
+</kw>
+<kw name="E então a funcionalidade apresentará o retorno dos dados inseridos nos campos" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então a funcionalidade apresentará o retorno dos dados inseridos nos campos" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se o resultado foi exibido...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="0.000000"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:44.408352" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="3.002365"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="3.002365"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:44.521462" level="INFO">Element 'id=result' is displayed.</msg>
+<arg>${Results}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-07T09:48:44.408352" elapsed="0.113110"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se o campo Number está presente no resultado</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:48:44.521462" elapsed="0.005461"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:44.613295" level="INFO">Element 'xpath=/html/body/main/div[3]/div[2]/div[1]/div/div[2]/div[2]/div[1]/div/strong' is displayed.</msg>
+<arg>${NumberResult}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-11-07T09:48:44.526923" elapsed="0.086372"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:47.639325" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:44.613295" elapsed="3.026030"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:44.613295" elapsed="3.026030"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Resultados exibidos e campo presente</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:48:47.639325" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cenário 04 Passou</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:48:47.639325" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-07T09:48:47.639325" elapsed="2.809235"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="9.042573"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="9.042573"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:41.405987" elapsed="9.042573"/>
+</kw>
+<tag>Cenario_04</tag>
+<status status="PASS" start="2025-11-07T09:47:53.365505" elapsed="57.085188"/>
+</test>
+<test id="s1-t5" name="Cenário 05: Validar que ao realizar login, uma mensagem de sucesso é exibida" line="62">
+<kw name="Dado que ao acessar o site" owner="Gherkin" source_name="Dado ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="que ao acessar o site" owner="Steps">
+<kw name="Abrir o site" owner="Keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:50.450693" level="INFO">Opening browser 'chrome' to base url 'https://practice.expandtesting.com/'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="6.008894"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-07T09:48:56.460217" elapsed="0.117916"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:48:59.580903" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:56.580153" elapsed="3.001220"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:56.580153" elapsed="3.001220"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="9.130680"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="9.130680"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="9.130680"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="9.130680"/>
+</kw>
+<kw name="E ao clicar no card Test Login Page" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao clicar no card Test Login Page" owner="Steps">
+<kw name="Clicar no texto Test Login Page" owner="Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:48:59.581373" level="INFO">Executing JavaScript:
+window.scrollBy(0, 400)
+Without any arguments.</msg>
+<arg>${ScrollMedium}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:59.581373" elapsed="0.047680"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:02.629753" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:48:59.629053" elapsed="3.000700"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:59.629053" elapsed="3.000700"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:02.629753" level="INFO">Clicking element 'css=a[href="/login"]'.</msg>
+<arg>${TestLoginPage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:02.629753" elapsed="23.319079"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:28.949652" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:25.948832" elapsed="3.000820"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:25.948832" elapsed="3.000820"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:59.581373" elapsed="29.368279"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:59.581373" elapsed="29.368279"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:48:59.581373" elapsed="29.368279"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:48:59.581373" elapsed="29.368279"/>
+</kw>
+<kw name="E ao direcionar o usuário para a tela de login" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao direcionar o usuário para a tela de login" owner="Steps">
+<kw name="Direcionar ao login" owner="Keywords">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:28.953048" level="INFO">Executing JavaScript:
+window.scrollBy(0, 400)
+Without any arguments.</msg>
+<arg>${ScrollMedium}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:28.953048" elapsed="0.095854"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:32.053691" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:29.051258" elapsed="3.002433"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:29.051258" elapsed="3.002433"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:28.953048" elapsed="3.100643"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:28.953048" elapsed="3.100643"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:28.949652" elapsed="3.104039"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:28.949652" elapsed="3.104039"/>
+</kw>
+<kw name="E ao inserir um username" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao inserir um username" owner="Steps">
+<kw name="Inserir username" owner="Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:32.056390" level="INFO">Clicking element 'id=username'.</msg>
+<arg>${InputUsuario}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:32.056390" elapsed="0.313402"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:35.370445" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:32.369792" elapsed="3.001504"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:32.369792" elapsed="3.001504"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:35.371296" level="INFO">Typing text 'practice' into text field 'id=username'.</msg>
+<arg>${InputUsuario}</arg>
+<arg>practice</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:35.371296" elapsed="0.175391"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:38.547138" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:35.546687" elapsed="3.001807"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:35.546687" elapsed="3.001807"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:32.056390" elapsed="6.492104"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:32.056390" elapsed="6.492104"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:32.056390" elapsed="6.492104"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:32.053691" elapsed="6.494803"/>
+</kw>
+<kw name="E ao inserir um password" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="ao inserir um password" owner="Steps">
+<kw name="Inserir password" owner="Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:38.548494" level="INFO">Clicking element 'id=password'.</msg>
+<arg>${InputSenha}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:38.548494" elapsed="0.263498"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:41.823068" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:38.811992" elapsed="3.011076"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:38.811992" elapsed="3.011076"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:41.824647" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>${InputSenha}</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:41.823068" elapsed="0.217862"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:45.041430" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:42.040930" elapsed="3.000500"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:42.040930" elapsed="3.000500"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:38.548494" elapsed="6.492936"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:38.548494" elapsed="6.492936"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:38.548494" elapsed="6.492936"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:38.548494" elapsed="6.492936"/>
+</kw>
+<kw name="Quando o usuário clicar no botão Login" owner="Gherkin" source_name="Quando ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="o usuário clicar no botão Login" owner="Steps">
+<kw name="Fazer login" owner="Keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:45.041430" level="INFO">Clicking element 'xpath=/html/body/main/div[3]/div[2]/div/div[1]/div[2]/div/div/div/form/button'.</msg>
+<arg>${BotaoLogin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:45.041430" elapsed="3.070953"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:45.041430" elapsed="3.070953"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:45.041430" elapsed="3.070953"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:45.041430" elapsed="3.070953"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:45.041430" elapsed="3.072974"/>
+</kw>
+<kw name="E então será exibida uma mensagem de login realizado com sucesso" owner="Gherkin" source_name="E ${Keyword}">
+<kw name="Run Keyword" owner="BuiltIn">
+<kw name="então será exibida uma mensagem de login realizado com sucesso" owner="Asserts">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se o o login foi realizado com sucesso...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:49:48.122323" elapsed="0.000000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:48.131064" level="INFO">Verifying element 'xpath=/html/body/main/div[2]/div/div/div/b' contains exact text 'You logged into a secure area!'.</msg>
+<arg>${MensagemSucesso}</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-11-07T09:49:48.122323" elapsed="0.215750"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verificando se não é uma mensagem falsa...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:49:48.338073" elapsed="0.000000"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:51.339555" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:48.338073" elapsed="3.001482"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:48.338073" elapsed="3.001482"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-11-07T09:49:51.411916" level="INFO">${classe} = alert alert-success alert-dismissible fade show</msg>
+<var>${classe}</var>
+<arg>${ClasseMensagemSucesso}</arg>
+<arg>class</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-11-07T09:49:51.339555" elapsed="0.072361"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${classe}</arg>
+<arg>alert-success</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2025-11-07T09:49:51.411916" elapsed="0.001507"/>
+</kw>
+<kw name="Timer low" owner="Timer">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-07T09:49:54.414656" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-07T09:49:51.413423" elapsed="3.001233"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:51.413423" elapsed="3.001233"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Dupla verificação concluida!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:49:54.414656" elapsed="0.001585"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cenário 05 Passou</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-11-07T09:49:54.416241" elapsed="0.001012"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-07T09:49:54.417253" elapsed="2.815621"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:48.121375" elapsed="9.111499"/>
+</kw>
+<arg>${Keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2025-11-07T09:49:48.116427" elapsed="9.116447"/>
+</kw>
+<status status="PASS" start="2025-11-07T09:49:48.114404" elapsed="9.118470"/>
+</kw>
+<tag>Cenario_05</tag>
+<status status="PASS" start="2025-11-07T09:48:50.450693" elapsed="66.782181"/>
+</test>
+<doc>Desafio 03 - Prática de automação de cenários
+
+Objetivo: Utilizar o Robot Framework como ferramenta de automação dos cenários elaborados para o desafio 03
+
+Site de referência: https://practice.expandtesting.com/
+
+Autor: Felipe Gassi</doc>
+<status status="PASS" start="2025-11-07T09:46:17.224563" elapsed="220.008311"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Cenario_01</stat>
+<stat pass="1" fail="0" skip="0">Cenario_02</stat>
+<stat pass="1" fail="0" skip="0">Cenario_03</stat>
+<stat pass="1" fail="0" skip="0">Cenario_04</stat>
+<stat pass="1" fail="0" skip="0">Cenario_05</stat>
+</tag>
+<suite>
+<stat name="Cenarios" id="s1" pass="5" fail="0" skip="0">Cenarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
